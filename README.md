@@ -7,7 +7,7 @@ Please see: https://unofficialaciguide.com for full details
 # Procedures:
 
 ```
-1) from the linux, mac box where you will do the install from make sure you have terraform binary installed
+1) from the linux, mac box where you will do the install from, make sure you have terraform binary installed
           browse to https://terraform.io/downloads,  go to the bottom and right-click and copy the terraform binary
           on your mac or linux box,  do a curl -O <the copied buffer>
           unzip the file that you just curled in.  e.g.  unzip terraform_1.1.6_linux_386.zip
