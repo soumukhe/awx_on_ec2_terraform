@@ -30,7 +30,7 @@ The AWX foundation has announced plans to keep the projects "lock and step" in t
 
 6) the output on the screen will give you the ec2 Public IP.  SSH to the ec2 with ec2-user@publicIP and run the following scripts:
      ./1.runansible_play.sh  # this ansible playbook will take 5 minutes to run
-     ./2.install_galay_awx_tasksh
+     ./2.install_galay_awx_task.sh
      ./3.install_galaxy-awx_web.sh
      ./4.create_aci_dir.sh
 
