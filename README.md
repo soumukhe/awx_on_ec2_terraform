@@ -47,7 +47,8 @@ The actual bringup should not take more than 10 minutes. Before you start, go to
 
 8)  To Destroy:
      for full AWS constructs this script built:  terraform destroy
-     to just destroy the ec2:   terraform destroy --target aws_instance.dummy-phy-ec2
+     to just destroy the ec2 only:   terraform destroy --target aws_instance.dummy-phy-ec2
+
 
 
 ```
