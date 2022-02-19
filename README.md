@@ -27,7 +27,7 @@ The actual bringup should not take more than 10 minutes. Before you start, go to
           d) sudo mv terraform /usr/local/bin
 
 2) clone this directory:   git clone https://github.com/soumukhe/awx_on_ec2_terraform.git
-3) cd awx_on_ec2_terraform.git
+3) cd awx_on_ec2_terraform
 4) vi overfide.tf and put in your AWS access-keys and secret keys and awx desired password
 
 5) run the terraform script:
