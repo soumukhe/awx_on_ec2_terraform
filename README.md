@@ -14,7 +14,7 @@ The AWX foundation has announced plans to keep the projects "lock and step" in t
 
 ```
 1) from the linux/mac box where you will do the install from, make sure you have terraform binary installed
-          a) browse to https://terraform.io/downloads,  go to the bottom and right-click and copy the terraform binary
+          a) browse to https://terraform.io/downloads,  go to the bottom and right-click and copy the terraform binary for your platform
           b) on your mac or linux box,  do a curl -O <the copied buffer>
           c) unzip the file that you just curled in.  e.g.  unzip terraform_1.1.6_linux_386.zip
           d) sudo mv terraform /usr/local/bin
