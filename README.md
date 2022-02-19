@@ -35,7 +35,8 @@ The AWX foundation has announced plans to keep the projects "lock and step" in t
      ./4.create_aci_dir.sh
 
 7) Now you can browse to your awx ui.   Point browser to http://public_IP of ec2.   
-     you can do a terraform output from the terraform worksapce directory (where you ran the terraform plan from) to see the public ip
+     a) you can do a terraform output from the terraform worksapce directory (where you ran the terraform plan from) to see the public ip
+     b) the username will be admin and the password will be the one you specified in the overide.tf file
 
 8)  To Destroy:
      for full AWS constructs this script built:  terraform destroy
