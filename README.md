@@ -12,6 +12,13 @@ The AWX foundation has announced plans to keep the projects "lock and step" in t
 
 # Procedures:
 
+This procedure will create everything for you and install AWX ready to be used. It will create objects on AWS, such as VPCs, CIDRs, Subnets, Internet Gateway, Security Groups and EC2. It will also install doker, docker-compose, Ansible and get the scripts ready in the home directory. You just have to ssh in to the EC2 and run those scripts (which are numbered, 1.x, 2,x, 3.x, 4.x).
+
+The actual bringup should not take more than 10 minutes. Before you start, go to the AWS console and create a AWS Key and Secret, which you will need to enter in the "override.tf" file before running the script.
+
+⚠️ The Security Group rules confiugurd by this script is wide open because this is for a POC. If you wanted to tighten it down, please change the terraform resource definition in main.tf before executing the script.
+
+
 ```
 1) from the linux/mac box where you will do the install from, make sure you have terraform binary installed
           a) browse to https://terraform.io/downloads,  go to the bottom and right-click and copy the terraform binary for your platform
