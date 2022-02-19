@@ -16,7 +16,7 @@ This procedure will create everything for you and install AWX ready to be used. 
 
 The actual bringup should not take more than 10 minutes. Before you start, go to the AWS console and create a AWS Key and Secret, which you will need to enter in the "override.tf" file before running the script.
 
-⚠️ The Security Group rules confiugurd by this script is wide open because this is for a POC. If you wanted to tighten it down, please change the terraform resource definition in main.tf before executing the script.
+⚠️ The Security Group rules confiugurd by this script are wide open because this is for a POC. If you wanted to tighten it down, please change the terraform resource definition in main.tf before executing the script.
 
 
 ```
