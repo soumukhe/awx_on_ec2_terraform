@@ -177,11 +177,9 @@ resource "null_resource" "awx" {
       "sudo yum install git -y",
       "git clone -b 17.1.0 https://github.com/ansible/awx.git",
       "sed -i 's/# admin_password=password/admin_password=${var.awx_pass}/g' /home/ec2-user/awx/installer/inventory",
-      "sudo pip3 install ansible",
-      "sed -i 's/# admin_password=password/admin_password=C1sc0123!/g' /home/ec2-user/awx/installer/inventory",
       "sed -i 's/#project_data_dir=\\/var\\/lib\\/awx\\/projects/project_data_dir=\\/var\\/lib\\/awx\\/projects/g' /home/ec2-user/awx/installer/inventory",
 
-
+      "sudo pip3 install ansible",
       "echo ansible-playbook -i /home/ec2-user/awx/installer/inventory /home/ec2-user/awx/installer/install.yml >> 1.runansible_play.sh",
       "chmod 775 1.runansible_play.sh",
       "echo docker exec -it awx_task ansible-galaxy collection install cisco.aci >> 2.instll_galaxy-awx_task.sh",
