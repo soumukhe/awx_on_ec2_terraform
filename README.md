@@ -8,19 +8,19 @@ Please see: https://unofficialaciguide.com for full details
 
 ```
 1) from the linux, mac box where you will do the install from, make sure you have terraform binary installed
-          browse to https://terraform.io/downloads,  go to the bottom and right-click and copy the terraform binary
-          on your mac or linux box,  do a curl -O <the copied buffer>
-          unzip the file that you just curled in.  e.g.  unzip terraform_1.1.6_linux_386.zip
-          sudo mv terraform /usr/local/bin
+          a) browse to https://terraform.io/downloads,  go to the bottom and right-click and copy the terraform binary
+          b) on your mac or linux box,  do a curl -O <the copied buffer>
+          c) unzip the file that you just curled in.  e.g.  unzip terraform_1.1.6_linux_386.zip
+          d) sudo mv terraform /usr/local/bin
 
 2) clone this directory:   git clone https://github.com/soumukhe/awx_on_ec2_terraform.git
 3) cd awx_on_ec2_terraform.git
 4) vi overfide.tf and put in your AWS access-keys and secret keys and awx desired password
 
 5) run the terraform script:
-      terraform init
-      terraform validate
-      terraform apply
+      a) terraform init
+      b) terraform validate
+      c) terraform apply
 
 6) the output on the screen will give you the ec2 Public IP.  SSH to the ec2 with ec2-user@publicIP and run the following scripts:
      ./1.runansible_play.sh
